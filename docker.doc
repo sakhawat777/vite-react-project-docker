@@ -1,5 +1,9 @@
 Build and start the application:
 docker-compose up --build
+// start
+docker compose up
+// stop
+docker compose down
 
 Start the production app:
 docker-compose -f docker-compose.yml up --build

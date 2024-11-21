@@ -6,7 +6,7 @@ services:
          context: .
          dockerfile: Dockerfile
       ports:
-         - '5173:5173' # Map the Vite development server port
+         - 5173:5173 # Map the Vite development server port
       volumes:
          - .:/app # Mount the project directory
          - /app/node_modules # Avoid overwriting the container's node_modules
@@ -14,9 +14,7 @@ services:
       environment:
          - NODE_ENV=development
 
-
-          # docker-compose.yml for production:
-
+           # docker-compose.yml for production:
 # version: '3.8'
 
 # services:
