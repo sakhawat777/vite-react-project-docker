@@ -1,0 +1,45 @@
+Build and start the application:
+docker-compose up --build
+
+Start the production app:
+docker-compose -f docker-compose.yml up --build
+
+The docker ps command is used to list all running Docker containers. It shows information about the containers that are currently active:
+docker ps
+
+List All Containers (Including Stopped):
+docker ps -a
+
+The docker compose up -d command is used to start the services defined in your docker-compose.yml file in detached mode (i.e., running in the background):
+docker compose up -d
+
+To view the logs of the running services, you can run:
+docker compose logs
+
+Or to view logs for a specific service:
+docker compose logs <service-name>
+
+To stop the containers, you can run:
+docker compose down
+
+
+
+
+// Docker Build Command:
+docker build -t docker-test .
+// Docker Run Command: 
+docker run docker-test
+// For login:
+docker login
+USING WEB-BASED LOGIN
+To sign in with credentials on the command line, use 'docker login -u <username>'
+
+//create docker file
+docker tag b7df12ecbf7b sakhawatcse/docker-test:v1
+// docker list
+docker images or docker image ls
+
+// Docker image push command
+docker push sakhawatcse/docker-test:v1
+// For Pull
+docker pull sakhawatcse/docker-test:v1
